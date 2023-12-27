@@ -1,6 +1,5 @@
 name: Expresiones
 run-name: ¡Aprendiendo Expresiones con GitHub Actions!
-
 on:
   workflow_dispatch:
     inputs:
@@ -9,21 +8,19 @@ on:
         required: true
         type: integer
       nombre:
-        description: "Nombre"
+        description: "Tu Nombre"
         required: true
         default: "Jose"
         type: string
-
 jobs:
   mayor:
-    if: ${{ edad >= 18 }}
+    if: ${{ inputs.edad >= 18 }}
     runs-on: ubuntu-latest
     steps:
       - name: Correr script
         run: echo ${{ inputs.nombre }} es mayor de edad
-
   menor:
-    if: ${{ edad < 18 }}
+    if: ${{ inputs.edad < 18 }}
     runs-on: ubuntu-latest
     steps:
       - name: Correr script
