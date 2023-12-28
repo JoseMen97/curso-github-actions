@@ -1,5 +1,5 @@
-name: Expresiones
-run-name: ¡Aprendiendo Expresiones con GitHub Actions!
+name: expresiones
+run-name: Aprendiendo Expresiones
 on:
   workflow_dispatch:
     inputs:
