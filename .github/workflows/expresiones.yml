@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       edad:
-        description: "Edad"
+        description: 'Tu edad'
         required: true
-        type: integer
+        type: string
       nombre:
-        description: "Tu Nombre"
+        description: 'Tu Nombre'
         required: true
         default: "Jose"
         type: string
